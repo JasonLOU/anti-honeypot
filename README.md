@@ -7,7 +7,6 @@
 ```
 GET /jsonip?callback=jsonp_callback_随机字母 HTTP/1.1
 Host: api.ip.sb
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:52.0) Gecko/20100101 Firefox/52.0
 Accept: */*
 Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate
@@ -16,7 +15,6 @@ Connection: close
 
 HTTP/1.1 200 OK
 Server: nginx
-Date: Thu, 20 Aug 2020 06:13:24 GMT
 Content-Type: application/json; charset=utf-8
 Connection: close
 Vary: Accept-Encoding
@@ -66,10 +64,26 @@ jsonp_callback_随机字母({"ip":"外网ip地址"});
 
 ```
 POST /api/portrait HTTP/1.1
+Accept: application/json, text/plain, */*
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/json;charset=utf-8
+Content-Length: 1728
+Connection: close
 
 {"portrait_sign":"GDGk5/JMdBSvxt4GeVLezAOSQduOoTMZXEbSTCGY5Eh6GYcb18CmcJVhvbS5ZUFnQ9iIHAKkTs2UQhtsKSwAPsWksofHkkszB3bHvDv67yvm4HUMWqUVtmF+vxV75MI/86GPV6ShXj8V9EGmPl3DGSUIFt8ChYxxUIJjFLJoDA+0qyJEGzNQ2JL3e9zoM81iaVmpSrS44HYNvNY9ejhdFkSvB/eq/hHijOKXfH7sOI+lazq1e43GsXZvCFPaf4cWRu7l33CvFeoerXAE01Y5uIwPalMdAsV8339lt5W6IpNvvkqPLcm5SwCtWYxkynxuN4Yd9nHaFG9AvHQaQ3zH81iOFWxOwDwkfTxZClLgsL9Py1h+GwiGYDJqQxuPoRUdHnS821htm+vTps+joFmp3xmferJsBSvuhgNJadXKoGvn9L99dnl6dmBD/MKexeS8E024xsGbprjPeyYM5s0C79buW11fzBq7E/p3StTA8SOzgXA3zo/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wEVtaEyT6MGexhAZR68vFmju+DsujbLJoX0x5d0uo6qgCMsy+tmRIyJH8mkTiv4Ir80jRpfjtDOj5yKWYMp4ZD3mf9Bo2peBAwEWpmmsuGnsuZ+NC96KrA0tHZCC8E2xcXXG/pGHGSbKHEld2fKsb4FY+nLA9gl3X6H31esvIbm1+tdpRbDgfZpXCu0J6cQVJ1A5gR9WFdS2euXodOXmzm+OSHbRHWxAM0FTnQAkOsktxazlfk93kr+D0xHFzzX/GNyuJlmMdn8Fo662I0Z4oEdOqb8MOwHO6O16tQFOmw463T9tC5BkV6h98yIsqyu5SznwoXSfy0yZ7rmrVasg5bqBIf8kRc2KR1MIRaxqSQLDJ0B3GGDwJdpjGZOiTuzjQFStwA0GgRuk+DXllSWFW782G5E2+m5F4TRsBMDmnRZn7tXDh5p93ZutKJXc3hMnAeXGmawYD6waE/Oh3ajzquHfKnQD6Tg/LUzoXFV4/yq9pU++navi2c2R+eRLcx0+jAZ9eUkKS1rlMEkALGNa0rjjrxbk2aYI5X/3CL15dc7wnRSeHH2EWGdNgaaqqOSvzskdN55CVYyxCrtOEYvaH2OOijKesXezkKemRlFphShZhk5442oxJ9/cGTHZ4Jl9URgYGznpREHemyBXEEX7yAF4jRw/4RDviakxfyudoEjmpmIqGt+yjIysFPAFgeZXgvtt89SkG8kRBbs/gmQp5JFOSA+vRKocfvdRFQO4aB0C5Odc2RoVwdzOEXubE0HTgFDCWuZOjMzT1sC+29jTdtgOONeXK8sUsTukvDMxC46dnPgNleDxOFkyV0N8finZtGjja0RHGK+oupjJLLjpVcWeO7YFvJZxAZxX6e1sHGLnd64U4hPNok6Mm7fqezmn7DkShP30FIhuynL8DQb9wopEISEOkxprHEdIz0truoIjZTfbdTcvZFw5X2whm7myhFl7wA4Ou8j0uGCW1XwUgHcXHm5vLkuovKRefDwoOu684vWZAo="}
 
+HTTP/1.1 200 OK
+Server: gunicorn/20.0.4
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 2
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: content-type
+Referrer-Policy: no-referrer
 
+ok
 ```
 
 ```
