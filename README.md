@@ -1,8 +1,41 @@
 
 
+
+
+## 0x01 获取真实ip地址 api.ip.sb
+
+```
+GET /jsonip?callback=jsonp_callback_随机字母 HTTP/1.1
+Host: api.ip.sb
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:52.0) Gecko/20100101 Firefox/52.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 20 Aug 2020 06:13:24 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Vary: Accept-Encoding
+Content-Length: 50
+
+jsonp_callback_随机字母({"ip":"外网ip地址"});
+```
+
 `honey/format/js/portrait.js`
 
-## rsa 传输敏感信息
+```
+        function o() {
+            return n.default.jsonpGetJSON("https://api.ip.sb/jsonip", "callback")
+        }
+
+```
+## 0x02 rsa 传输敏感信息
+
+`honey/format/js/portrait.js`
 
 ```
         function w(r) {
