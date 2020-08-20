@@ -99,6 +99,81 @@ ok
             })
         }
 ```
+## 解密加密数据
+
+browser
+host
+network
+social
+```
+
+
+browser==
+{"name":"chrome","version":"84.0.4147","versionNumber":84.04147,"mobile":false,"os":"OS X 10.15.5","canvasFingerprint":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+{
+  "name": "chrome",
+  "version": "84.0.4147",
+  "versionNumber": 84.04147,
+  "mobile": false,
+  "os": "OS X 10.15.5",
+  "canvasFingerprint": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+&&host=={"cpuConcurrency":6,"fonts":["Andale Mono","Arial","Arial Black","Arial Hebrew","Arial Narrow","Arial Rounded MT Bold","Arial Unicode MS","Comic Sans MS","Courier","Courier New","Geneva","Georgia","Helvetica","Helvetica Neue","Impact","LUCIDA GRANDE","Microsoft Sans Serif","Monaco","Palatino","Tahoma","Times","Times New Roman","Trebuchet MS","Verdana","Wingdings","Wingdings 2","Wingdings 3"],"timezone":"Asia/Shanghai","language":"zh-CN","screenResolution":[1792,1120],"render":"ATI Technologies Inc.~AMD Radeon Pro 5300M OpenGL Engine","os":"OS X 10.15.5","touchSupport":false,"hasUnity":false}
+{
+  "cpuConcurrency": 6,
+  "fonts": [
+    "Andale Mono",
+    "Arial",
+    "Arial Black",
+    "Arial Hebrew",
+    "Arial Narrow",
+    "Arial Rounded MT Bold",
+    "Arial Unicode MS",
+    "Comic Sans MS",
+    "Courier",
+    "Courier New",
+    "Geneva",
+    "Georgia",
+    "Helvetica",
+    "Helvetica Neue",
+    "Impact",
+    "LUCIDA GRANDE",
+    "Microsoft Sans Serif",
+    "Monaco",
+    "Palatino",
+    "Tahoma",
+    "Times",
+    "Times New Roman",
+    "Trebuchet MS",
+    "Verdana",
+    "Wingdings",
+    "Wingdings 2",
+    "Wingdings 3"
+  ],
+  "timezone": "Asia/Shanghai", // 地区
+  "language": "zh-CN",
+  "screenResolution": [
+    1792,
+    1120
+  ],
+  "render": "ATI Technologies Inc.~AMD Radeon Pro xxxxM OpenGL Engine", //图形卡
+  "os": "OS X 10.15.5", // 系统OS
+  "touchSupport": false,  
+  "hasUnity": false
+}
+&&network=={"externalIP":{"ip":"x.x.x.x"},"realIP":{"ip":"x.x.x.x"},"internalIP":{}}
+{
+  "externalIP": {
+    "ip": "x.x.x.x"
+  },
+  "realIP": {
+    "ip": "x.x.x.x"
+  },
+  "internalIP": {}
+}
+&&social=={}
+
+```
 
 # 背景
 在真实攻防演习中，蓝队不再像以前只是被动防守，而是慢慢开始转变到主动出击的角色。对蓝队反制红队帮助最大的想来非蜜罐莫属，现在的商业蜜罐除了会模拟一个虚拟的靶机之外，还承担了一个很重要的任务：溯源黑客真实身份。相当一部分黑客因为浏览器没开隐身模式导致被利用jsonhijack漏洞抓到真实ID，虽然可以反手一个举报到src换积分，但是在漏洞修复之前，又是一批战友被溯源。相信很对已经被溯源的红方选手对此更有体会。
