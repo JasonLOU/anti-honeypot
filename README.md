@@ -99,7 +99,20 @@ ok
             })
         }
 ```
-## 解密加密数据
+## 0x03 拦截加密数据
+
+`var s = l.Base64.encode(a.join("&&"));`
+
+```
+        function w(r) {
+            var n = g(r), t = new Array(n), i = 0;
+            for (var o in r) t[i] = o, i += 1;
+            t.sort();
+            for (var a = new Array(n), u = 0; u < n; u++) a[u] = t[u] + "==" + (0, e.default)(r[t[u]]);
+            var s = l.Base64.encode(a.join("&&"));
+            return new c.default("-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAoFFaYiUG8Koc05H85I2w3zwQekOLg8aPfjPxBMJhWxCVjau8wiek\nmo9jgWEjrDui8tlQSKZT006boe2BksLeOeQFnJMfoYtBbF9x8n8kXykUS+8CWY9V\nEFd/yK3GMrfqo58+ov0Y4QN3ln7Bfwn/52pSbf16R9IXuEaY7pHydPNA1B48t7tA\nNRO4BHqpcCbVtgQu1haHJRhP+3ID1oHHDKNRh5DjwU+Ls6zhfRhB/O77QkhDotx2\nhCKm43/4SPenL8TWJAQS9iAH8HDTEGsy23+TGn729KaMymJf3ZRAr3Gyo22+qtGv\nrMgcVHM2iBGLtRvxY9sTIWY0Vzy3dwSYfwIDAQAB\n-----END RSA PUBLIC KEY-----", "pkcs1-public-pem", {encryptionScheme: "pkcs1"}).encrypt(s, "base64", "utf8")
+        }
+```
 
 browser
 host
