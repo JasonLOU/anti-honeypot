@@ -1,6 +1,6 @@
 
 
-{https://github.com/jas502n/anti-honeypot/blob/master/honey/format/js/portrait.js}[./honey/format/js/portrait.js]
+`honey/format/js/portrait.js`
 
 ## rsa 传输敏感信息
 
